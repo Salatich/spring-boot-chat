@@ -1,5 +1,6 @@
 package project.springbootchat.controllers;
 
+import com.jcabi.aspects.Loggable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import project.springbootchat.model.*;
@@ -16,6 +17,7 @@ import project.springbootchat.service.UserService;
 
 
 @Controller
+@Loggable(Loggable.DEBUG)
 public class ApiController {
 
     @Autowired
